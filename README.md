@@ -7,9 +7,12 @@ In this competition, we created a multilayer perceptron for frame-level speech r
 
 # Datatset
  The training data comprises of:
+ 
 • Speech recordings (raw mel spectrogram frames)
 • Frame-level phoneme state labels
+
 The test data comprises of:
+
 • Speech recordings (raw mel spectrogram frames)
 • Phoneme state labels are not given
 
@@ -17,12 +20,12 @@ One can download the dataset from the Kaggle website at the following link: http
 
 # Dependencies
 
-Python 3.6+
-PyTorch 2.0
-Numpy
-Matplotlib
-Wandb
-DataLoader,TensorDataset
+1. Python 3.6+
+2. PyTorch 2.0
+3. Numpy
+4. Matplotlib
+5. Wandb
+6. DataLoader,TensorDataset
 
 # Running the Code
 Once you have installed the dependencies and downloaded the dataset, you can run the code by opening the Jupyter Notebook "Train-Clean-360.ipynb" in your Jupyter Notebook environment. 
