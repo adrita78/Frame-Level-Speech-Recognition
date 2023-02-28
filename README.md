@@ -26,9 +26,10 @@ One can download the dataset from the Kaggle website at the following link: http
 4. Matplotlib
 5. Wandb
 6. DataLoader,TensorDataset
+7. 
 
 # Running the Code
-Once you have installed the dependencies and downloaded the dataset, you can run the code by opening the Jupyter Notebook "Train-Clean-360.ipynb" in your Jupyter Notebook environment. 
+Once you have installed the dependencies and downloaded the dataset, you can run the code by opening the Jupyter Notebook "Train-Clean-360.ipynb" in your Google Colab environment. 
 
 The notebook contains the following sections:
 
@@ -47,28 +48,26 @@ Then we created the dataloader for the training set and set the model to "Traini
 
 After this step, the validation set dataloader was created. We computed the model output in "no grad" mode and calculated the validation loss using model output. Returned the most likely phenome as prediction from the model output.After that, the validation accurcay was calculeted.
 
-After the building the network architecture, the hyperparameter tuning was done we ran diffrent ablations using Weights and Biases. We also saved the model after every checkpoint. After the model was being trained, we tested our model with the test dataset and submitted prediction to kaggle.
+After the building the network architecture, the hyperparameter tuning was done we ran diffrent ablations using Weights and Biases. We also saved the model after every checkpoint.After the model was being trained, we tested our model with the test dataset and submitted prediction to kaggle.
 
 # Experiments
 
-We tried different architectures and hyperparameters to achieve the best performance.The final architecture has 6 layers. We used the follwoing Hyperparameters: 
-Learning Rate: 0.001
-Batch Size : 8192
-Number of epochs: 60
-Activation Function: Softplus
-Context Size : 25
-Optimizer:AdamW
-Loss : CrossEntropy
+We tried different architectures and hyperparameters to achieve the best performance.The final architecture has 6 layers. We used the following Hyperparameters: 
+1.Learning Rate: 0.001
+2.Batch Size : 8192
+3.Number of epochs: 60
+4.Activation Function: Softplus
+5.Context Size : 25
+6.Optimizer:AdamW
+7.Loss : CrossEntropy
 
-We also tried different other architectures. We tried  
+I trained the model for 40 epochs with the learning rate 1e-3 and the we decresed the learning rate to 1e-5 after the 40th epoch.
+We also tried different other architectures. We tried an architecture with 8 layers. Although it gave the desired accuracy, it crossed the total number of parameters limit.
 
-
-
-
-
-
+Checkpoints have been saved in this folder: https://drive.google.com/drive/folders/1sG68Agp2vfwgT2ChtpDBlHcYyXqT7i-K?usp=share_link
 
 # Conclusion
+In conclusion, we have implemented a multi-layer perceptron that achieves high accuracy in frame-level recognition. We have experimented with different architectures and hyperparameters to achieve the best performance. The code is easy to run and can be extended to other speech recognition tasks.
 
 
 
