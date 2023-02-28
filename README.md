@@ -26,7 +26,7 @@ One can download the dataset from the Kaggle website at the following link: http
 4. Matplotlib
 5. Wandb
 6. DataLoader,TensorDataset
-7. 
+
 
 # Running the Code
 Once you have installed the dependencies and downloaded the dataset, you can run the code by opening the Jupyter Notebook "Train-Clean-360.ipynb" in your Google Colab environment. 
@@ -53,13 +53,13 @@ After the building the network architecture, the hyperparameter tuning was done 
 # Experiments
 
 We tried different architectures and hyperparameters to achieve the best performance.The final architecture has 6 layers. We used the following Hyperparameters: 
-1.Learning Rate: 0.001
-2.Batch Size : 8192
-3.Number of epochs: 60
-4.Activation Function: Softplus
-5.Context Size : 25
-6.Optimizer:AdamW
-7.Loss : CrossEntropy
+1. Learning Rate: 0.001
+2. Batch Size : 8192
+3. Number of epochs: 60
+4. Activation Function: Softplus
+5. Context Size : 25
+6. Optimizer:AdamW
+7. Loss: CrossEntropy
 
 I trained the model for 40 epochs with the learning rate 1e-3 and the we decresed the learning rate to 1e-5 after the 40th epoch.
 We also tried different other architectures. We tried an architecture with 8 layers. Although it gave the desired accuracy, it crossed the total number of parameters limit.
