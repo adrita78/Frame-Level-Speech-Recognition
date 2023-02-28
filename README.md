@@ -41,7 +41,7 @@ The notebook contains the following sections:
 8. Hyperparameter Tuning
 
 
-In the AudioDataetClass we defined the label index mapping in __init__() and assigned data index mapping,length,context and offset to self. Then we zero padded the data as needed for context size and then calculated the starting and ending timesteps using offset and context in __getitem__(). Then we returned the frames at index with context and corresponding phenome label.
+In the #AudioDatasetClass we defined the label index mapping in __init__() and assigned data index mapping,length,context and offset to self. Then we zero padded the data as needed for context size and then calculated the starting and ending timesteps using offset and context in __getitem__(). Then we returned the frames at index with context and corresponding phenome label.
 
 Then we created the dataloader for the training set and set the model to "Training Mode'. Then we computed the model output and the loss and completed the bakcward pass. Then we updated the model weights.
 
