@@ -47,9 +47,23 @@ Then we created the dataloader for the training set and set the model to "Traini
 
 After this step, the validation set dataloader was created. We computed the model output in "no grad" mode and calculated the validation loss using model output. Returned the most likely phenome as prediction from the model output.After that, the validation accurcay was calculeted.
 
-After the building the network architecture, the hyperparameter tuning was done we ran diffrent ablations using Weights and Biases. We also saved the model after every checkpoint.
+After the building the network architecture, the hyperparameter tuning was done we ran diffrent ablations using Weights and Biases. We also saved the model after every checkpoint. After the model was being trained, we tested our model with the test dataset and submitted prediction to kaggle.
 
 # Experiments
+
+We tried different architectures and hyperparameters to achieve the best performance.The final architecture has 6 layers. We used the follwoing Hyperparameters: 
+Learning Rate: 0.001
+Batch Size : 8192
+Number of epochs: 60
+Activation Function: Softplus
+Context Size : 25
+Optimizer:AdamW
+Loss : CrossEntropy
+
+We also tried different other architectures. We tried  
+
+
+
 
 
 
