@@ -1,6 +1,6 @@
 # Frame-Level-Speech-Recognition
 
-This Jupyter notebook contains the implementation of a multi-layer perceptron using Python programming language. The model was developed to solve a specific problem or task, which will be described below.
+The above Jupyter notebooks contains the implementation of a multi-layer perceptron using Python programming language. The model was developed to solve a specific problem or task, which will be described below.
 
 # Problem Statement
 In this competition, we created a multilayer perceptron for frame-level speech recognition. Specifically,a frame-level phonetic transcription of raw Mel Frequency Cepstral Coefficients (MFCCs) was created. The MLP learnt a feature representation and nonlinear classification boundary. To discriminate between each phoneme class label, cross-entropy loss was used to minimize the dissimilarity between output logits and the target labels. The loss was used during gradient descent to update the parameters of the neural network, thereby minimizing the cost function.
