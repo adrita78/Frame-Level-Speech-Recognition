@@ -29,7 +29,7 @@ One can download the dataset from the Kaggle website at the following link: http
 
 
 # Running the Code
-Once you have installed the dependencies and downloaded the dataset, you can run the code by opening the Jupyter Notebook "Train-Clean-360.ipynb" in your Google Colab environment. 
+Once you have installed the dependencies and downloaded the dataset, you can run the code by opening the Notebook "Train-Clean-360.ipynb" in your Google Colab environment. 
 
 The notebook contains the following sections:
 
